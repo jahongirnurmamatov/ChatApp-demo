@@ -6,7 +6,7 @@ const useLogin = () => {
     const [loading, setLoading] = useState(false);
     const { setAuthUser } = useAuthContext()
     const login = async ({ username, password }) => {
-        console.log(username, password)
+      
         if (!username || !password) {
             toast.error("Missing fields...");
             return;
